@@ -28,48 +28,35 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+This was generated with:
 
-```bash
-$ npm install
+`nest g application test`
+
+`cd test`
+
+`npm install`
+
+`nest build`
+
+Then, 
+
+`nest start -- watch`
+
+Make a change in IDE and save change.
+
+App recompiles, then fails to start with:
+
+```
+1:05:26 PM - Found 0 errors. Watching for file changes.
+[Nest] 18221   - 09/23/2019, 1:05:27 PM   [NestFactory] Starting Nest application...
+[Nest] 18221   - 09/23/2019, 1:05:27 PM   [InstanceLoader] AppModule dependencies initialized +21ms
+[Nest] 18221   - 09/23/2019, 1:05:27 PM   [RoutesResolver] AppController {/}: +7ms
+[Nest] 18221   - 09/23/2019, 1:05:27 PM   [RouterExplorer] Mapped {/, GET} route +4ms
+[Nest] 18221   - 09/23/2019, 1:05:27 PM   [NestApplication] Nest application successfully started +4ms
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
 ```
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](LICENSE).
